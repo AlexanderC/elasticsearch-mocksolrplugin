@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <assembly>
-    <id></id>
+    <id>plugin</id>
     <formats>
         <format>zip</format>
     </formats>
@@ -9,17 +9,15 @@
         <dependencySet>
             <outputDirectory>/</outputDirectory>
             <useProjectArtifact>true</useProjectArtifact>
-            <useTransitiveFiltering>true</useTransitiveFiltering>
-            <excludes>
-                <exclude>org.elasticsearch:elasticsearch</exclude>
-            </excludes>
-        </dependencySet>
-        <dependencySet>
-            <outputDirectory>/</outputDirectory>
-            <useProjectArtifact>true</useProjectArtifact>
-            <useTransitiveFiltering>true</useTransitiveFiltering>
             <includes>
+                <include>org.codelibs:elasticsearch-solr-api</include>
+                <include>org.apache.solr:solr-core</include>
                 <include>org.apache.solr:solr-solrj</include>
+                <include>org.noggit:noggit</include>
+                <include>org.slf4j:slf4j-api</include>
+                <include>commons-io:commons-io</include>
+                <include>commons-codec:commons-codec</include>
+                <include>org.codehaus.woodstox:wstx-asl</include>
             </includes>
         </dependencySet>
     </dependencySets>
